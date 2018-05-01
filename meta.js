@@ -14,7 +14,7 @@ module.exports = {
       'type': 'string',
       'required': false,
       'message': 'Project description',
-      'default': 'Nuxt.js project'
+      'default': 'Tensorflow js simple project'
     },
     author: {
       'type': 'string',
