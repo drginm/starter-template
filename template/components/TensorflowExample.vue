@@ -25,7 +25,7 @@
     <div class="predict-controls">
       <h2 class="section col-sm-1">Predicting</h2>
       <input class="field element" v-model="valueToPredict" type="number" placeholder="Enter an integer number"><br>
-      <div class="element">{{predictedValue}}</div>
+      <div class="element" v-html="predictedValue"></div>
       <button class="element button--green" v-on:click="predict" :disabled="!trained">Predict</button>
     </div>
   </div>
