@@ -8,6 +8,9 @@
       <h2 class="subtitle">
         {{ description }}
       </h2>
+
+      <tensorflow-example/>
+
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -24,10 +27,12 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import TensorflowExample from '~/components/TensorflowExample.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    TensorflowExample
   }
 }
 </script>

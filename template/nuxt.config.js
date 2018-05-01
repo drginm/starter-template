@@ -21,6 +21,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['@tensorflow/tfjs'],
     /*
     ** Run ESLint on save
     */
