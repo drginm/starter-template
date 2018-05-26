@@ -21,6 +21,9 @@ $ npm run generate
 # For serving the generated files
 npm install -g serve
 serve ./dist
+
+# generate static project inside a subfolder
+$ npm run generate:use-subfolder
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).

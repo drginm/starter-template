@@ -1,4 +1,11 @@
+const routerBase = process.env.USE_SUBFOLDER === 'true' ? {
+  router: {
+    base: '/{{ name }}/'
+  }
+} : {}
+
 module.exports = {
+  ...routerBase,
   /*
   ** Headers of the page
   */

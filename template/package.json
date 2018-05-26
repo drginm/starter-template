@@ -7,8 +7,10 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
+    "build:use-subfolder": "cross-env USE_SUBFOLDER=true nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "generate:use-subfolder": "cross-env USE_SUBFOLDER=true nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
@@ -18,6 +20,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
+    "cross-env": "^5.1.6",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
