@@ -8,12 +8,8 @@
         <div>
 
           <div class="col-sm-1">
-            <input class="field field-x"
-                  v-model="xValues[index]"
-                  type="number">
-            <input class="field field-y"
-                  v-model="yValues[index]"
-                  type="number">
+            <input class="field field-x" v-model="xValues[index]" type="number">
+            <input class="field field-y" v-model="yValues[index]" type="number">
           </div>
       </div>
       </div>
@@ -68,7 +64,7 @@ export default {
     },
     predict() {
       // Use the model to do inference on a data point the model hasn't seen before:
-      this.predictedValue = this.model.predict(tf.tensor2d([this.valueToPredict], [1, 1])).get();
+      this.predictedValue = this.model.predict(tf.tensor2d([this.valueToPredict], [1, 1])).get(0, 0);
     }
   }
 }
