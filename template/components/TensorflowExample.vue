@@ -57,7 +57,7 @@ export default {
       const ys = tf.tensor2d(this.yValues, [this.yValues.length, 1]);
 
       // Train the model using the data.
-      model.fit(xs, ys).then(() => {
+      model.fit(xs, ys, {epochs: 50}).then(() => {
         this.trained = true;
         this.predictedValue = 'Ready for making predictions';
       });

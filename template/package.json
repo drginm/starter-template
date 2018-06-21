@@ -15,7 +15,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@tensorflow/tfjs": "^0.10.3",
+    "@tensorflow/tfjs": "^0.11.7",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
